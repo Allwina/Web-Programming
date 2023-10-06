@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var day = new Date().getDay();
+    switch (day)
+    {
+        case 4:
+        case 5:
+        text = "SOON IT IS WEEKEND";
+        break;
+        case 0:
+        case 6:
+        text = "IT IS WEEKEND";
+        break;
+        default:
+        text = "Looking forward to weekend";
+
+    }
+    alert(text);
+
+    </script>
+</body>
+</html>
