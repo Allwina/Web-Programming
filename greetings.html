@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Day</title>
+    <script type="text/javascript">
+        var name;
+        var greet;
+        var now = new Date();
+        var hour = now.getHours();
+        if(hour<12)
+        {
+            greet="Good Morning";
+        }
+        else if(hour>=12 && hour<17)
+        {
+            greet ="Good Afternoon";
+        }
+        else
+        {
+            greet ="Good Evening";
+        }
+        alert(greet +" Welecome to javascript");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
