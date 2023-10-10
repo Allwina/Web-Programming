@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function test()
+        {
+        var name=document.form1.fname.value;
+        alert(name);
+        var age=document.form1.age.value;
+        alert(age);
+        document.getElementById("op").innerHTML="Hello"+name +"You are"+age+" yrs old";
+        }
+    </script>
+</head>
+<body>
+    <h1>Javascript Functions</h1>
+    <form name="form1" action="" method="post">
+        Name: <input type="text" id="name" name="fname"/> <br/> <br/>
+        Age: &nbsp;&nbsp; &nbsp;
+        <input type="text" name="age" id="age"/> <br/> <br/>
+        <input type="button" value="SUBMIT" onclick="test()"/>
+    </form>
+    <p id="op"></p>
+</body>
+</html>
