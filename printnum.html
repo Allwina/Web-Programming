@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function printme()
+        {
+            var numericString = "42";
+            var parseIntValue = parseInt(numericString);
+            alert("Parsed int "+ parseIntValue);
+            var b ="23.3";
+            var pfloat = parseFloat(b);
+            alert("Parse float "+ pfloat);
+            var nan ="Good";
+            alert("IS NAN "+ isNaN(nan));
+            var an =45;
+            alert("IS NAN "+ isNaN(an));
+        }
+
+    </script>
+    <input type="button" value="Print Me" onclick="printme()"/>
+</body>
+</html>
