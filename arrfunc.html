@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function printme(unknown)
+        {
+            document.writeln("<br/> we got : ",unknown);
+
+        }
+        var arr1 = ["cat","mouse","dog"];
+        document.writeln("<br/> Array 1 : ",arr1);
+        var arr2 = ["fish","unicorn","cock"];
+        document.writeln("<br/> Array 2 : ",arr2);
+        var x = 1;
+        printme(arr1);
+        printme(arr2);
+        printme(x);
+        arr1[x]="lion";
+        printme(arr1);
+
+    </script>
+</body>
+</html>
