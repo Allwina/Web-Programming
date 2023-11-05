@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        let count = 0;
+
+        function increaseCount() {
+            count++;
+            document.getElementById("countDisplay").innerHTML = count;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="increaseCount()">Increase Count</button>
+    <p>Count: <span id="countDisplay">0</span></p>
+</body>
+</html>
