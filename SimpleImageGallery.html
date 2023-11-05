@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function displayImage(imageUrl) {
+            document.getElementById("largeImage").src = imageUrl;
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <img id="largeImage" src="" alt="Large Image">
+    </div>
+    <div>
+        <img src="thumbnail1.jpg" onclick="displayImage('fullsize1.jpg')" alt="Thumbnail 1">
+        <img src="thumbnail2.jpg" onclick="displayImage('fullsize2.jpg')" alt="Thumbnail 2">
+        <img src="thumbnail3.jpg" onclick="displayImage('fullsize3.jpg')" alt="Thumbnail 3">
+    </div>
+</body>
+</html>
