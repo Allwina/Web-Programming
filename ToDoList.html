@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function addTask() {
+            const taskText = document.getElementById("taskInput").value;
+            if (taskText) {
+                const taskList = document.getElementById("taskList");
+                const taskItem = document.createElement("li");
+                taskItem.textContent = taskText;
+                taskList.appendChild(taskItem);
+                document.getElementById("taskInput").value = "";
+            }
+        }
+
+        function removeTask() {
+            const taskList = document.getElementById("taskList");
+            if (taskList.children.length > 0) {
+                taskList.removeChild(taskList.children[0]);
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="taskInput" placeholder="Add a task">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+    <button onclick="removeTask()">Remove Task</button>
+</body>
+</html>
