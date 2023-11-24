@@ -12,10 +12,33 @@
             var myObj ={"name":"John","age":31,"city":"New York","Hobbies":["Singing","Dancing","Movies"],"Cars":{"car1":"Ford","car2":"BMW"}};
             document.getElementById("demo").innerHTML="Name: "+myObj.name+
             "<br/> Age: "+myObj.age+"<br/> City: "+myObj.city+"<br/> Hobbies: "+myObj.Hobbies+"<br/>"+myObj.Cars.car1+"<br/>";
-            
-            for(x in myObj)
+            //Display properties of Top level properties
+            for( var x in myObj)
             {
-                document.write(x+"="+myObj[x]+"<br/>");
+                if(myObj.hasOwnProperty(x))
+                {
+                    var propertyValue = myObj[x];
+                    if(typeof propertyValue ==='object' && propertyValue !== null)
+                    {
+                        for(var nestedKey in propertyValue)
+                        {
+                            if(propertyValue.hasOwnProperty(nestedKey))
+                            {
+                                document.write(x+"."+nestedKey+"="+propertyValue[nestedKey]+"<br/>");
+                            }
+                        }
+                    }
+                    else
+                    {
+                            document.write(x+"="+ propertyValue+"<br/>");
+                    }
+                }
+                
+            }
+            //Accessing nested object properties
+            for(var x in myObj.Cars)
+            {
+                document.write(x+"="+myObj.Cars[x]+"<br/>");
             }
         </script>
 
