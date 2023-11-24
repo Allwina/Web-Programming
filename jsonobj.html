@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Accessing JSON using js </h2>
+    <p id="demo">
+        <script>
+            var myObj ={"name":"John","age":31,"city":"New York","Hobbies":["Singing","Dancing","Movies"],"Cars":{"car1":"Ford","car2":"BMW"}};
+            document.getElementById("demo").innerHTML="Name: "+myObj.name+
+            "<br/> Age: "+myObj.age+"<br/> City: "+myObj.city+"<br/> Hobbies: "+myObj.Hobbies+"<br/>"+myObj.Cars.car1+"<br/>";
+            
+            for(x in myObj)
+            {
+                document.write(x+"="+myObj[x]+"<br/>");
+            }
+        </script>
+
+    </p>
+</body>
+</html>
